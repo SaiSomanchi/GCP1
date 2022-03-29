@@ -1,7 +1,12 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 29 20:20:35 2022
+FROM python:3.8.0-slim-buster
 
-@author: 703311085
-"""
+RUN apt-get update && apt-get install -y --no-install-recommends make
 
+RUN python -m pip install --upgrade pip
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . /app
+WORKDIR /app/app_files
+
+CMD ["python", "app.py"]
