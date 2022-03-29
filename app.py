@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 29 20:22:22 2022
-
-@author: 703311085
-"""
-
 from flask import Flask, request, jsonify
 
 import pandas as pd
