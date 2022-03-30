@@ -11,3 +11,12 @@ COPY . /app
 WORKDIR /app/app_files
 
 CMD ["python", "app.py"]
+runtime: custom
+env: flex
+
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
