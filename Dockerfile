@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM python:3.7.0-slim-buster
+FROM python:3.6-slim-buster
 
 RUN apt-get update && apt-get install -y --no-install-recommends make
 
