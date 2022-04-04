@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def server_check():
-    return "SUCCESS!"
+    return "Your Trigger is Successfull"
 
 @app.route('/predict', methods=['POST'])
 def predictor():
